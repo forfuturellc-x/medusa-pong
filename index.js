@@ -36,3 +36,14 @@ function run(payload, done) {
 function teardown(done) {
     return done(null);
 }
+
+function help(payload, done) {
+    const info=`
+pong
+    Get a ping.
+`;
+    return done(null, {
+        type: "text",
+        text: info,
+    });
+}
