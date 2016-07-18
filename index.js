@@ -3,7 +3,7 @@
  * Copyright (c) 2016 GochoMugo <mugo@forfuture.co.ke>
  * Copyright (c) 2016 Forfuture, LLC <we@forfuture.co.ke>
  *
- * The 'ping' plugin.
+ * The 'pong' plugin.
  */
 
 
@@ -26,30 +26,13 @@ function setup(b, done) {
 
 
 function run(payload, done) {
-    const store = bot.storage.get("memory");
-    var hits = store.get("hits") || 0;
-    const sender = "Mr. "  + (payload.args[0] || "Anonymous");
-
-    store.put("hits", ++hits);
     return done(null, {
         type: "text",
-        text: bot.config.replyMessage  + " #" + hits + " for " + sender,
+        text: "pong",
     });
 }
 
 
 function teardown(done) {
     return done(null);
-}
-
-
-function help(payload, done) {
-    const info=`
-ping <name>
-    Ping back with your name. e.g. ping Heisenberg
-`;
-    return done(null, {
-        type: "text",
-        text: info,
-    });
 }
