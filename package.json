@@ -1,0 +1,13 @@
+{
+    "bot": {
+        "id": "ping",
+        "command": "ping",
+        "medusa": "~0.0.0",
+        "description": "Ping to check if am alive"
+    },
+    "name": "medusa-ping",
+    "version": "0.0.0",
+    "description": "Plugin for just pinging, for medusa",
+    "author": "GochoMugo (www.gmugo.in)",
+    "main": "index.js"
+}
