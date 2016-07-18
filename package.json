@@ -3,7 +3,7 @@
         "id": "pong",
         "command": "pong",
         "medusa": "~0.0.0",
-        "description": "Pong"
+        "description": "Get a ping"
     },
     "name": "medusa-pong",
     "version": "0.0.0",
